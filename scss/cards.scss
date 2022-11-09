@@ -78,6 +78,7 @@
 		width: 100%;
 
 		&--small-margin {
+			display: flex;   /* почему при добавлении этого свойства ссылка пеменята свой размер на нормальный?*/
 			justify-content: start;
 			margin-top: 38px;
 
