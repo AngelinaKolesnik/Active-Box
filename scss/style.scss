@@ -1,0 +1,23 @@
+*{
+	text-decoration: none;
+	list-style: none;
+	list-style-type: none;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+	position: relative;
+	z-index: 1;
+}
+
+.container-fluid {
+	padding: 0;
+}

@@ -1,0 +1,104 @@
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -15px;
+
+	&__item {
+		padding: 0 15px;
+		flex-direction: column; 
+
+		&--3-in-row {
+			width: 33.333%;
+		}
+
+		&--4-in-row {
+			width: 25%;
+		}
+
+		&--margin-top {
+			margin-top: 89px;
+		}
+
+		&--center {
+			@include center;
+		} 
+
+		&--top {
+			justify-content: start;
+		} 
+
+		&--left {
+			@include left;
+		} 
+	}
+
+	&__title {
+		font-size: 24px;
+		text-transform: uppercase;
+		width: 100%;
+
+		&--black {
+			@include ffr900;
+			margin: 29px 0 20px;
+			height: 72px;
+			@include center;
+		}
+
+		&--bold {
+			@include ffr700;
+			margin: 30px 0 5px;
+			line-height: 30px;
+		}
+	}
+
+	&__description {
+		@include ffr400;
+		font-size: 18px;
+		line-height: 21px;
+		width: 100%;
+
+		&--red {
+			margin-bottom: 18px;
+			color: $red;
+			text-transform: uppercase;
+		}
+
+		&--uppercase {
+			text-transform: uppercase;
+			margin-bottom: 29px;
+			@include ffr700;
+		}
+
+		&--white {
+			color: $white;
+		}
+	}
+
+	&__socials {
+		width: 100%;
+
+		&--small-margin {
+			justify-content: start;
+			margin-top: 38px;
+
+			a {
+
+				&:not(:first-child) {
+					margin-left: 5px;
+				}
+			}
+		}
+		
+		&--large-margin {
+			margin-top: 20px;
+			@include center;
+
+			a {
+
+				&:not(:first-child) {
+					margin-left: 27px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,29 @@
+{
+  "name": "active-box",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "source": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AngelinaKolesnik/Active-Box.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AngelinaKolesnik/Active-Box/issues"
+  },
+  "homepage": "https://github.com/AngelinaKolesnik/Active-Box#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.2",
+    "parcel": "^2.7.0",
+    "sass": "^1.56.0"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.7.0"
+  }
+}

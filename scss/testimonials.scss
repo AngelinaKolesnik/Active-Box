@@ -1,0 +1,67 @@
+.testimonials {
+
+	img {
+		width: 50%;
+		height: 100%;
+	}
+
+	&__content {
+		height: 100%;
+		display: flex;
+		margin-bottom: 45px;
+	}
+
+	&__text {
+		width: 50%;
+		background: $eggplant;
+		padding-left: 129px;
+		color: $white;
+		@include center;
+		align-items: start;
+		flex-direction: column;
+	}
+
+	p {
+		@include ffc400it;
+		font-size: 36px;
+		width: 100%;
+		max-width: 471px;
+		height: 230px;
+		@include center;
+		text-align: left;
+	}
+
+	&__description {
+		@include ffr700;
+		font-size: 13px;
+		width: 100%;
+		max-width: 471px;
+		height: 28px;
+		@include center;
+		justify-content: start;;
+		text-transform: uppercase;
+	}
+
+	.carousel-indicators {
+		margin: 31px 0 0;
+   }
+
+	.carousel-indicators .active {
+		background-color: $eggplant;
+	}
+
+   .carousel-indicators [data-bs-target] {
+		box-sizing: border-box;
+		width: 14px;
+		height: 14px;
+		opacity: 1;
+		border: 1px solid $eggplant;
+		border-radius: 50%;
+		margin-left: 0;
+		margin-right: 0;
+
+		&:not(:first-of-type) {
+		margin-left: 25px;
+		}
+	}
+}

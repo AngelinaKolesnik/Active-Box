@@ -1,0 +1,19 @@
+
+
+.header {
+  height: 100px;
+}
+
+.header .nav {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.header .nav__menu {
+  display: flex;
+}
+
+
+
+/*# sourceMappingURL=index.8368275b.css.map */

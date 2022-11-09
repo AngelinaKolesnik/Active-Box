@@ -1,0 +1,61 @@
+.header {
+	background: none;
+
+	.nav {
+		position: absolute;
+		left: 15px;
+		right: 15px;
+		top: 0;
+		display: flex;
+		border-bottom: 1px solid $grey;
+		justify-content: space-between;
+		align-items: center;
+		height: 100px; 
+
+		&__menu {
+			display: flex;
+			height: inherit;
+
+			li {
+				width: 134px;
+				height: 100%;
+
+				a {
+					@include center;
+					height: 100%;
+					text-transform: uppercase;
+					@include ffr700;
+					color: $white;
+					font-size: 13px;
+					position: relative;
+
+					&:hover::after {
+						position: absolute;
+						content: '';
+						left: 0;
+						bottom: 0;
+						height: 3px;
+						width: 100%;
+						background: $grey;
+					} 
+
+					&:active {
+						color: $red-active;
+
+						&::after {
+							position: absolute;
+							content: '';
+							left: 0;
+							bottom: 0;
+							height: 3px;
+							width: 100%;
+							background: $red-active;
+						} 
+					}
+
+					
+				}
+			}
+		}
+	}
+}

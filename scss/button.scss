@@ -1,0 +1,21 @@
+.btn {
+	margin: 0 auto;
+	width: 370px;
+	height: 80px;
+	background: $red;
+	border: 0;
+	color: $white;
+	@include ffr900;
+	font-size: 24px;
+	@include center;
+	text-transform: uppercase;
+
+	&:hover {
+		background: $red-active;
+	}
+
+	&:active {
+		background: $red;
+		box-shadow: 4px 4px 30px $red;
+	}
+}

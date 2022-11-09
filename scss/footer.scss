@@ -1,0 +1,30 @@
+.footer {
+	padding: 71px 0 161px;
+	background: $blue;
+
+	.container {
+		max-width: none;
+	}
+
+	&__bottom {
+		background: $dark-blue;
+		padding: 24px 0;
+		@include center;
+		position: absolute;
+		bottom: -161;
+		right: 0;
+		left: 0;
+
+		p {
+			@include ffr400;
+			font-size: 18px;
+			line-height: 21px;
+			color: $dark-grey;
+			width: 100%;
+
+			span {
+				color: $white;
+			}
+		}
+	}
+}

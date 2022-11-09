@@ -1,0 +1,19 @@
+.download {
+	@include sectionPadding;
+
+	&__text {
+		@include ffr500;
+		font-size: 30px;
+		line-height: 70px;
+		@include center;
+	}
+
+	&__description {
+		@include ffr700;
+		text-transform: uppercase;
+		font-size: 18px;
+		line-height: 21px;
+		@include center;
+		margin: 5px 0 48px;
+	}
+}
