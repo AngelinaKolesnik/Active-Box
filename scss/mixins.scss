@@ -44,6 +44,14 @@
 
 @mixin sectionPadding {
 	padding: 114px 0;
+
+	@media (max-width: 1200px) {
+		padding: 78px 0;
+	}
+
+	@media (max-width: 576px) {
+		padding: 35px 0;
+	}
 }
 
 @mixin shadowInWorks {

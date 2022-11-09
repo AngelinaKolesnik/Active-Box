@@ -10,7 +10,24 @@
 		border-bottom: 1px solid $grey;
 		justify-content: space-between;
 		align-items: center;
-		height: 100px; 
+		height: 100px;
+		
+		@media (max-width: 1200px) {
+			left: 20px;
+			right: 20px;
+		}
+	
+		@media (max-width: 576px) {
+			height: 56px;
+			border: 0;
+		}
+
+		.logo {
+
+			@media (max-width: 576px) {
+				width: 103px;
+			}
+		}
 
 		&__menu {
 			display: flex;
@@ -20,6 +37,14 @@
 				width: 134px;
 				height: 100%;
 
+				@media (max-width: 1200px) {
+					width: 112px;
+				}
+			
+				@media (max-width: 576px) {
+					display: none;
+				}
+
 				a {
 					@include center;
 					height: 100%;
@@ -28,6 +53,10 @@
 					color: $white;
 					font-size: 13px;
 					position: relative;
+
+					@media (max-width: 1200px) {
+						font-size: 12px;
+					}
 
 					&:hover::after {
 						position: absolute;
@@ -52,10 +81,27 @@
 							background: $red-active;
 						} 
 					}
-
-					
 				}
 			}
+		}
+
+		.header__btn, .header__btn--open {
+			display: none;
+
+			@media (max-width: 576px) {
+				height: 19px;
+				width: 24px;
+				margin-right: 15px;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+
+				div {
+					height: 3px;
+					width: 100%;
+					background: #fff;
+				}	
+			}	
 		}
 	}
 }
